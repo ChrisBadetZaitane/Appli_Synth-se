@@ -17,7 +17,7 @@ public class Connexion {
 		// Information d'acc�s � la base de donn�es
 		String url = "jdbc:mysql://134.214.113.155/p1512799";
 		String login = "p1512799";
-		String passwd = "248128";
+		String passwd = "******";
 		Connection cn =null;
 		Statement st =null;
 		ResultSet rs =null;
@@ -33,7 +33,7 @@ public class Connexion {
 			// Etape 3 : Cr�ation d'un statement
 			st = cn.createStatement();
 
-			String sql = "update club set city='Lion' where name='Olympique Lyonnais'";
+			String sql = "update club set city='Lyon' where id_club='120'";
 
 			// Etape 4 : ex�cution requ�te
 			//rs = st.executeQuery(sql);

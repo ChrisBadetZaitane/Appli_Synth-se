@@ -21,6 +21,11 @@ public class Referee {
         this.nationality = nationality;
     }
     
+    public int getRefereeNationality(int nationality) {
+        
+        return refereeId;
+    }
+    
     public int getRefereeId() {
         return refereeId;
     }
