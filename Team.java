@@ -63,5 +63,5 @@ public class Team {
 	private int matchsGoalFor;
 	private int matchsGoalAgainst;
 	
-	//test super dfjfdkjfjsfkjfkjfqk
+	
 }
