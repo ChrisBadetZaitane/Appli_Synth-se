@@ -5,34 +5,33 @@ import java.lang.*;
 import java.util.Date;
 
 
-
-
-
-public class competition{
+public abstract class Competition{
     
       private String competitionName;
       private Date year;
       private Team calendar;
       private Team Winner;
       
-      public int getTeamRank( Team teamname){
+     /* public int getTeamRank( Team teamname){
 
           
       }
       
-      public int[][] getLeagueTable (String competionName){
+      public int[][] getLeagueTable (String competitionName){
       
+          return ;
+      }*/
+      public String getCompetitionName(){
+    	  return competitionName;
       }
-
-      public Team getWinner ( String competionName){
-
+      public Date getYear(){
+    	  return year;
       }
+      public abstract Team getWinner();
 
-      public Team[] getAllWinners ( String competionName){
-
-      }
-
-      public void closeChampionship ( String competionName){
+      public abstract Team[] getAllWinners ();
+      
+      public void closeChampionship ( String competitionName){
 
       }
 

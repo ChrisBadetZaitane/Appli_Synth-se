@@ -1,4 +1,4 @@
-package appliSynthese;
+package applisynthese;
 
 public class Team {
 
@@ -62,6 +62,4 @@ public class Team {
 	private int championshipPoints;
 	private int matchsGoalFor;
 	private int matchsGoalAgainst;
-	
-	
 }
