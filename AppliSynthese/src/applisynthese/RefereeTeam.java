@@ -7,7 +7,7 @@ package applisynthese;
 
 /**
  *
- * @author p1511648
+ * @author Fanny Rottee
  */
 public class RefereeTeam {
 
