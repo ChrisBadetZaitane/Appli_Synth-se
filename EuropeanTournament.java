@@ -1,18 +1,19 @@
 package applisynthese;
 import java.lang.*;
+import java.util.Date;
 /**
  *
  * @author Antoine Daigremont
  */
 public abstract class EuropeanTournament extends Competition{
     
-    public EuropeanTournament(String competitionName) {
-		super(competitionName);
+    public EuropeanTournament(int season) {
+		super(season);
 		// TODO Auto-generated constructor stub
 	}
     
-    public String getCompetitionName(){
-  	  return super.getCompetitionName();
+    public int getSeason(){
+  	  return super.getSeason();
     }
 
 	//Méthode de classement des poules

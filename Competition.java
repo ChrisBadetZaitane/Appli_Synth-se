@@ -7,13 +7,15 @@ import java.util.Date;
 
 public abstract class Competition{
     
-      private String competitionName;
-      private Date year;
-      private Team calendar;
+      protected int season;
+      // private Date year;
+      //private Team calendar;
       private Team winner;
       
-      public Competition(String competitionName){
-    	  this.competitionName=competitionName;
+      public Competition(int season){
+    	  this.season=season;
+    	  //this.year=year;
+    	  
       }
      /* public int getTeamRank( Team teamname){
 
@@ -24,12 +26,12 @@ public abstract class Competition{
       
           return ;
       }*/
-      public String getCompetitionName(){
-    	  return competitionName;
+      public int getSeason(){
+    	  return season;
       }
-      public Date getYear(){
+      /*public Date getYear(){
     	  return year;
-      }
+      }*/
       public abstract Team getWinner();
 
       public abstract Team[] getAllWinners ();
