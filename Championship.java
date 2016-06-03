@@ -6,8 +6,8 @@ import java.lang.*;
  */
 public abstract class Championship extends Competition{
 
-	public Championship(String competitionName) {
-		super(competitionName);
+	public Championship(int season) {
+		super(season);
 		// TODO Auto-generated constructor stub
 	}
     

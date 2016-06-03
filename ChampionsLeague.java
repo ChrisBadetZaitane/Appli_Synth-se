@@ -12,8 +12,9 @@ public class ChampionsLeague extends EuropeanTournament{
 	/*public ChampionsLeague(String competitionName, Date year, Team calendar, Team winner){
 		super();
 	}*/
-    public ChampionsLeague(String competitionName) {
-		super(competitionName);
+	
+    public ChampionsLeague(int season) {
+		super(season);
 		
 	}
     
@@ -22,8 +23,8 @@ public class ChampionsLeague extends EuropeanTournament{
 		return "ChampionsLeague [getCompetitionName()=" + getCompetitionName() + "]";
 	}*/
 
-	public String getCompetitionName(){
-  	  return super.getCompetitionName();
+	public int getSeason(){
+  	  return super.getSeason();
     }
 	/**
      * @override
@@ -55,5 +56,11 @@ public class ChampionsLeague extends EuropeanTournament{
 		
 		
 	}*/
+	public void createChampionsLeague(){
+		 String seasonString = Integer.toString(season);
+		 String requete = "insert into competition (id_championnat, id_saison) values ('17', '" + seasonString +"')" ;
+		 Connexion c = new Connexion();
+		 c.modifBase(requete);
+	}
 	
 }
