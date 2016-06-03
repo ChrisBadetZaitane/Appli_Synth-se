@@ -5,16 +5,43 @@ public class Team {
 	public Team (String name, int nationality, String city, String stadium, 
 			int championshipPoints, int matchsGoalFor, int matchsGoalAgainst){
 		
-		name =this.name;
-		nationality =this.nationality;
-		city=this.city;
-		stadium=this.stadium;
-		championshipPoints=this.championshipPoints;
-		matchsGoalFor=this.matchsGoalFor;
-		matchsGoalAgainst=this.matchsGoalAgainst;
+		this.name=name;
+		this.nationality=nationality ;
+		this.city=city;
+		this.stadium=stadium;
+		this.championshipPoints=championshipPoints;
+		this.matchsGoalFor=matchsGoalFor;
+		this.matchsGoalAgainst=matchsGoalAgainst;
 	}
 	
 	
+
+
+
+	public void setChampionshipPoints(int championshipPoints) {
+		this.championshipPoints = championshipPoints;
+	}
+
+
+
+
+
+	public void setMatchsGoalFor(int matchsGoalFor) {
+		this.matchsGoalFor = matchsGoalFor;
+	}
+
+
+
+
+
+	public void setMatchsGoalAgainst(int matchsGoalAgainst) {
+		this.matchsGoalAgainst = matchsGoalAgainst;
+	}
+
+
+
+
+
 	public String getName() {
 		return name;
 	}
@@ -36,22 +63,8 @@ public class Team {
 	public int getMatchsGoalAgainst() {
 		return matchsGoalAgainst;
 	}
-	
 
 
-	public void setChampionshipPoints(int championshipPoints) {
-		this.championshipPoints = championshipPoints;
-	}
-
-
-	public void setMatchsGoalFor(int matchsGoalFor) {
-		this.matchsGoalFor = matchsGoalFor;
-	}
-
-
-	public void setMatchsGoalAgainst(int matchsGoalAgainst) {
-		this.matchsGoalAgainst = matchsGoalAgainst;
-	}
 
 
 
