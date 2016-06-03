@@ -5,8 +5,8 @@ package applisynthese;
  */
 public class NationalCup extends Competition{
 
-	public NationalCup(String competitionName) {
-		super(competitionName);
+	public NationalCup(int season) {
+		super(season);
 		// TODO Auto-generated constructor stub
 	}
 
