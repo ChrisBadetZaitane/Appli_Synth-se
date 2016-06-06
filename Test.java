@@ -36,11 +36,10 @@ public class Test {
 	
 		}*/
 		
-		int nb_matchs_joues, points, goalaverage, marques, encaisses;
-		Connexion c = new Connexion();
-		String requete = "select name, nb_matchs_joues, points, goalaverage, marques, encaisses from club, participation where club.id_club = "
-				+ "participation.id_club and id_competition=7 order by points desc, goalaverage desc, marques desc, encaisses desc";
-		ResultSet classement = c.lireBase(requete);
+		
+		Div1 ligue1bis = new Div1(3,1);
+		ligue1bis.createDiv1();
+		ligue1bis.participationTeam(10);
 		
 		
 	}
