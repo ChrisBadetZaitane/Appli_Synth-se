@@ -24,7 +24,7 @@ public class Div1 extends Championship{
 	
 	public void participationTeam(int competition){
 		Connexion c = new Connexion();
-		String requete = "select id_club from participation where id_competition=7 order by points desc, goalaverage desc, marques desc, encaisses desc limit 18";
+		String requete = "select id_club from participation where id_competition=7 order by points desc, goalaverage desc, marques desc, encaisses desc limit 17";
 		List classement = c.lireBase(requete, "id_club");
 		for (int i=0; i< classement.size(); i++){
 			String requeteBis = "insert into participation (id_club, id_competition, nb_matchs_joues, points, goalaverage, marques, encaisses) "
@@ -41,6 +41,11 @@ public class Div1 extends Championship{
 		}
 	    c.closeConnexion();
 	}
+	
+	/*public List afficherClassement(){
+		return list;
+	}*/
+
    
 	@Override
 	public Team getWinner() {
